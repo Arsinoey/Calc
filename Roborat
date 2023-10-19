@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        boolean run = true;
+        while (run) {
+        Scanner scanner = new Scanner (System.in);
+        System.out.println("Choose your OPERATOR + - × ÷ ");
+        String OP = scanner.nextLine();
+        
+        switch (OP) {
+            case "+" :{
+                System.out.println("Type Num 1");
+                double N1 = scanner.nextDouble();
+                System.out.println("Type Num 2");
+                double N2 = scanner.nextDouble();
+                System.out.println(N1 + N2);
+                break;
+            }
+            case "-" :{
+                System.out.println("Type Num 1");
+                double N1 = scanner.nextDouble();
+                System.out.println("Type Num 2");
+                double N2 = scanner.nextDouble();
+                System.out.println(N1 - N2);
+                break;
+            }
+            case "x" :{
+                System.out.println("Type Num 1");
+                double N1 = scanner.nextDouble();
+                System.out.println("Type Num 2");
+                double N2 = scanner.nextDouble();
+                System.out.println(N1 * N2);
+                break;
+            }
+            case "÷" :{
+                System.out.println("Type Num 1");
+                double N1 = scanner.nextDouble();
+                System.out.println("Type Num 2");
+                double N2 = scanner.nextDouble();
+                System.out.println(N1 / N2);
+                break;
+            }
+        }
+        }
+    }
+}
+        
+            
+
+        
+    
