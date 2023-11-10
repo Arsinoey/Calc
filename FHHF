@@ -1,0 +1,40 @@
+package javaapplication2;
+import java.util.Scanner;
+public class JavaApplication2 {
+
+    
+    public static void main(String[] args) {
+    Scanner tite = new Scanner(System.in);
+        System.out.print("Enter First Name - ");
+        String name1= tite.nextLine();
+        System.out.print("Enter Middle Name - ");
+        String name2= tite.nextLine();
+        System.out.print("Enter Last Name - ");
+        String name3= tite.nextLine();
+        
+        
+        boolean run = true;
+        while(run){
+        System.out.println("There are 9 possible combination type the number to see the combination");
+        int numbercom = tite.nextInt();
+        
+        
+        if (numbercom == 1){
+                System.out.println(name1 + name2 + name3);
+ 
+}
+        else if(numbercom == 2) {
+                System.out.println(name1 + name3 + name2);
+           
+}
+        
+        else if(numbercom == 3) {
+                System.out.println(name2 + name1 + name3);
+}
+        else if(numbercom == 4) {
+                System.out.println(name2 + name3 + name1);
+}
+   
+    }
+    }   
+}
